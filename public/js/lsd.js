@@ -1,9 +1,9 @@
 alert('onboarding script loaded');
 (function() {
-  const ONBOARDING_KEY = 'glint_onboarding_complete';
+  const lsdpasscheck = 'glint_onboarding_complete';
   const lsd = '0joswashere';
   
-  if (localStorage.getItem(ONBOARDING_KEY)) return;
+  if (localStorage.getItem(lsdpasscheck)) return;
 
   function createOnboarding() {
     const overlay = document.createElement('div');
@@ -46,7 +46,7 @@ alert('onboarding script loaded');
       if (e.key !== 'Enter') return;
 
       if (input.value === lsd) {
-        localStorage.setItem(ONBOARDING_KEY, 'true');
+        localStorage.setItem(lsdpasscheck, 'true');
         overlay.remove();
       } else {
         error.style.display = 'block';
