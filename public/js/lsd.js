@@ -7,7 +7,7 @@ alert('onboarding script loaded');
 
   function createOnboarding() {
     const overlay = document.createElement('div');
-    overlay.className = 'onboarding-overlay';
+    overlay.className = 'lsd-overlay';
     overlay.innerHTML = `
       <div class="onboarding-bg"></div>
       <div class="onboarding-particles"></div>
