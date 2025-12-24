@@ -323,6 +323,7 @@ body.dragging {
   width: 20px;
   height: 20px;
   object-fit: contain;
+  filter: brightness(1) invert(0);
 }
 
 /* New tab button */
@@ -566,6 +567,7 @@ body.dragging {
   height: auto;
   max-width: 100%;
   transition: transform 0.3s ease;
+  filter: brightness(1) invert(0);
 }
 
 .main-logo:hover {
