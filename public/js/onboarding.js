@@ -32,7 +32,7 @@
       <div class="onboarding-container">
         <div class="onboarding-header">
           <img src="images/logoo.png" alt="Glint" class="onboarding-logo">
-          <h1 class="onboarding-title">Welcome to <span class="title-gradient">Glint</span></h1>
+          <h1 class="onboarding-title">Welcome to <span class="title-gradient">THR's public proxies</span></h1>
           <p class="onboarding-subtitle">Select your vibe</p>
         </div>
         
