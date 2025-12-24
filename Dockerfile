@@ -1,21 +1,17 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
-WORKDIR /app
+RUN apk add --no-cache bash curl
 
-# Install pnpm
 RUN corepack enable && corepack prepare pnpm@9.12.2 --activate
 
-# Copy package files
-COPY package.json pnpm-lock.yaml ./
+WORKDIR /usr/src/app
 
-# Install dependencies
-RUN pnpm install --frozen-lockfile
+COPY package.json pnpm-lock.yaml* ./
 
-# Copy source code
+RUN pnpm install --frozen-lockfile --prod
+
 COPY . .
 
-# Expose port
-EXPOSE 8080
+EXPOSE 3000
 
-# Start the application
 CMD ["pnpm", "start"]
