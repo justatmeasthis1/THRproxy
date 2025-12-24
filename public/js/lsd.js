@@ -16,7 +16,7 @@ alert('onboarding script loaded');
         <div class="onboarding-header">
           <img src="images/logoo.png" alt="Glint" class="onboarding-logo">
           <h1 class="onboarding-title">
-            Please type the pass you've been given to continue to
+            Welcome to
             <span class="title-gradient">THR's studying site</span>
           </h1>
           <input type="password" class="onboarding-input" placeholder="Type password here">
