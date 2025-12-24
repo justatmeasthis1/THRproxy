@@ -1,22 +1,19 @@
-# Use Debian-based Node.js 20 LTS image (full tooling included)
-FROM node:20-bullseye
-
-# Install pnpm globally via npm
-RUN npm install -g pnpm@9.12.2
+# Use official pnpm image with Node 20 LTS
+FROM pnpm/pnpm:9.12.2-node20
 
 # Set working directory
 WORKDIR /usr/src/app
 
-# Copy package files first (for caching)
+# Copy package files first for caching
 COPY package.json pnpm-lock.yaml* ./
 
-# Install dependencies
+# Install dependencies in production mode
 RUN pnpm install --frozen-lockfile --prod
 
 # Copy the rest of the source code
 COPY . .
 
-# Expose the port your app uses
+# Expose the port your app listens on
 EXPOSE 3000
 
 # Start the app
