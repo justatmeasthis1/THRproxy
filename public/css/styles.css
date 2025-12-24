@@ -322,7 +322,7 @@ body.dragging {
 .tab-logo {
   width: 20px;
   height: 20px;
-  object-fit: contain
+  object-fit: contain;
 }
 
 /* New tab button */
