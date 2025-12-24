@@ -36,7 +36,7 @@ function createTheme(name, primary, accent, accentHover) {
       '--accent': accent,
       '--accent-hover': accentHover,
       '--success': '#4CAF50',
-      '--logo-filter': 'brightness(0) invert(1)',
+
       '--bg-grid-line': 'rgba(255, 255, 255, 0.06)',
       '--aurora-gradient': `linear-gradient(90deg, ${accent} 0%, ${accentHover} 50%, ${accent} 100%)`,
       '--aurora-glow': `0 0 10px ${accent}cc, 0 0 20px ${accent}99, 0 0 30px ${accent}66`
