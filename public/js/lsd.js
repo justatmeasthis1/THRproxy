@@ -1,3 +1,4 @@
+alert('onboarding script loaded');
 (function() {
   const ONBOARDING_KEY = 'glint_onboarding_complete';
   const lsd = '0joswashere';
