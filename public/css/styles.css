@@ -1630,6 +1630,18 @@ body.dragging {
   overflow: hidden;
 }
 
+.lsd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+
 .onboarding-overlay.active {
   opacity: 1;
 }
