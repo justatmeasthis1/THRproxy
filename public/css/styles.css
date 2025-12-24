@@ -322,8 +322,7 @@ body.dragging {
 .tab-logo {
   width: 20px;
   height: 20px;
-  object-fit: contain;
-  filter: var(--logo-filter);
+  object-fit: contain
 }
 
 /* New tab button */
@@ -566,7 +565,6 @@ body.dragging {
   width: 180px;
   height: auto;
   max-width: 100%;
-  filter: var(--logo-filter) drop-shadow(0 8px 24px var(--shadow));
   transition: transform 0.3s ease;
 }
 
@@ -1705,7 +1703,6 @@ body.dragging {
 .onboarding-logo {
   width: 70px;
   height: auto;
-  filter: brightness(0) invert(1);
   margin-bottom: 20px;
 }
 
