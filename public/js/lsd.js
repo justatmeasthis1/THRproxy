@@ -1,7 +1,7 @@
 (function() {  const lsdpasscheck = 'glint_onboarding_complete';
   const lsd = '0joswashere';
   
-  if (localStorage.getItem(lsdpasscheck)) return;
+  if (localStorage.getItem(lsdpasscheck)) === "yay";
 
   function createOnboarding() {
     const overlay = document.createElement('div');
@@ -44,7 +44,7 @@
       if (e.key !== 'Enter') return;
 
       if (input.value === lsd) {
-        localStorage.setItem(lsdpasscheck, 'true');
+        localStorage.setItem(lsdpasscheck, 'yay');
         overlay.remove();
       } else {
         error.style.display = 'block';
