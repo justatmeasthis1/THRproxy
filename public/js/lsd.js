@@ -1,6 +1,4 @@
-alert('onboarding script loaded');
-(function() {
-  const lsdpasscheck = 'glint_onboarding_complete';
+(function() {  const lsdpasscheck = 'glint_onboarding_complete';
   const lsd = '0joswashere';
   
   if (localStorage.getItem(lsdpasscheck)) return;
@@ -20,7 +18,7 @@ alert('onboarding script loaded');
             <span class="title-gradient">THR's studying site</span>
           </h1>
           <input type="password" class="onboarding-input" placeholder="Type password here">
-          <p class="onboarding-error" style="display:none; style="color: #FF9900;"">Incorrect password</p>
+          <p class="onboarding-error" style="display:none; style=color: #FF9900;">Incorrect password</p>
         </div>
       </div>
     `;
