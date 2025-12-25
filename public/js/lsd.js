@@ -16,7 +16,7 @@
 
       <div class="onboarding-container">
         <div class="onboarding-header">
-          <img src="images/lsp.png" alt="Glint" class="onboarding-logo">
+          <img src="images/lsp.png" alt="THR" class="onboarding-logo">
           <h1 class="onboarding-title">
             Welcome to
             <span class="title-gradient">THR's studying site</span>
@@ -24,7 +24,7 @@
             <div class="search-container">
               <div class="search-bar">
                 <div class="search-icon">
-                  <i class="fa-unlock"></i>
+                  <i class="fa fa-unlock" aria-hidden="true"></i>
                 </div>
                 <input type="password" class="onboarding-input" placeholder="Type password here">
               </div>
