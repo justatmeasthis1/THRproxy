@@ -1,15 +1,19 @@
-(function() {  const lsdpasscheck = 'glint_onboarding_complete';
+(function () {
+  const lsdpasscheck = 'glint_onboarding_complete';
   const lsd = '0joswashere';
-  
-  if (localStorage.getItem(lsdpasscheck)) === "yay";
 
-  function createOnboarding() {
+  // im so gassy
+  if (localStorage.getItem(lsdpasscheck) === 'yay') {
+    return;
+  }
+
+  function whatpass() {
     const overlay = document.createElement('div');
     overlay.className = 'lsd-overlay';
     overlay.innerHTML = `
       <div class="onboarding-bg"></div>
       <div class="onboarding-particles"></div>
-      
+
       <div class="onboarding-container">
         <div class="onboarding-header">
           <img src="images/lsp.png" alt="Glint" class="onboarding-logo">
@@ -18,14 +22,16 @@
             <span class="title-gradient">THR's studying site</span>
           </h1>
           <input type="password" class="onboarding-input" placeholder="Type password here">
-          <p class="onboarding-error" style="display:none; style=color: #FF9900;">Incorrect password</p>
+          <p class="onboarding-error" style="display:none; color:#FF9900;">
+            Incorrect password
+          </p>
         </div>
       </div>
     `;
 
     document.body.appendChild(overlay);
 
-    // particles
+    // Create particles
     const particlesContainer = overlay.querySelector('.onboarding-particles');
     for (let i = 0; i < 30; i++) {
       const particle = document.createElement('div');
@@ -36,7 +42,7 @@
       particlesContainer.appendChild(particle);
     }
 
-    // password validation
+    // Password check
     const input = overlay.querySelector('.onboarding-input');
     const error = overlay.querySelector('.onboarding-error');
 
@@ -57,5 +63,6 @@
     });
   }
 
-  createOnboarding();
+  // my dumbass forgot this :sob:
+  whatpass();
 })();
