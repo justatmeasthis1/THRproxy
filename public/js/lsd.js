@@ -26,7 +26,7 @@
                 <div class="search-icon">
                   <i class="fa fa-unlock" aria-hidden="true"></i>
                 </div>
-                <input type="password" class="onboarding-input" placeholder="Type password here">
+                <input type="password" class="main-search-input" placeholder="Type password here">
               </div>
             </div>
     `;
