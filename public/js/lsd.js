@@ -21,12 +21,14 @@
             Welcome to
             <span class="title-gradient">THR's studying site</span>
           </h1>
-          <input type="password" class="onboarding-input" placeholder="Type password here">
-          <p class="onboarding-error" style="display:none; color:#FF9900;">
-            Incorrect password
-          </p>
-        </div>
-      </div>
+            <div class="search-container">
+              <div class="search-bar">
+                <div class="search-icon">
+                  <i class="fa-unlock"></i>
+                </div>
+                <input type="password" class="onboarding-input" placeholder="Type password here">
+              </div>
+            </div>
     `;
 
     document.body.appendChild(overlay);
