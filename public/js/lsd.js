@@ -71,6 +71,3 @@
 
   whatpass();
 })();
-  // my dumbass forgot this :sob:
-  whatpass();
-})();
