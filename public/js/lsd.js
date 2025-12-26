@@ -16,7 +16,7 @@
 
       <div class="onboarding-container">
         <div class="onboarding-header">
-          <img src="images/lsp.png" alt="THR" class="onboarding-logo">
+          <img src="images/thrlogo.png" alt="THR" class="onboarding-logo">
           <h1 class="onboarding-title">
             Welcome to
             <span class="title-gradient">THR's studying site</span>
