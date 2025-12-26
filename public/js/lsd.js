@@ -2,10 +2,7 @@
   const lsdpasscheck = 'glint_onboarding_complete';
   const lsd = '0joswashere';
 
-  // im so gassy
-  if (localStorage.getItem(lsdpasscheck) === 'yay') {
-    return;
-  }
+  if (localStorage.getItem(lsdpasscheck) === 'yay') return;
 
   function whatpass() {
     const overlay = document.createElement('div');
@@ -21,19 +18,26 @@
             Welcome to
             <span class="title-gradient">THR's studying site</span>
           </h1>
-            <div class="search-container">
-              <div class="search-bar">
-                <div class="search-icon">
-                  <i class="fa fa-unlock" aria-hidden="true"></i>
-                </div>
-                <input type="password" class="main-search-input" placeholder="Type password here">
+
+          <div class="search-container">
+            <div class="search-bar">
+              <div class="search-icon">
+                <i class="fa fa-unlock" aria-hidden="true"></i>
               </div>
+              <input type="password" class="main-search-input" placeholder="Type password here">
             </div>
+          </div>
+
+          <p class="onboarding-error" style="display:none; color:#ff9900; margin-top:10px;">
+            Incorrect password
+          </p>
+        </div>
+      </div>
     `;
 
     document.body.appendChild(overlay);
 
-    // Create particles
+    // particles
     const particlesContainer = overlay.querySelector('.onboarding-particles');
     for (let i = 0; i < 30; i++) {
       const particle = document.createElement('div');
@@ -44,8 +48,8 @@
       particlesContainer.appendChild(particle);
     }
 
-    // Password check
-    const input = overlay.querySelector('.onboarding-input');
+    // password check
+    const input = overlay.querySelector('.main-search-input');
     const error = overlay.querySelector('.onboarding-error');
 
     input.addEventListener('keydown', (e) => {
@@ -65,6 +69,8 @@
     });
   }
 
+  whatpass();
+})();
   // my dumbass forgot this :sob:
   whatpass();
 })();
